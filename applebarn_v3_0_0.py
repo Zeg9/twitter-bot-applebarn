@@ -50,6 +50,12 @@ elif month != 8 and month != 7 and month != 3 and day == 28 and hour == 1: # Si 
 	listeTweets = ["( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)","Alors ? Heureuse ?","Heureusement qu'il y a Ahri hein.","Alors ? Ça fait comment ?","Décidemment, c'est pas ton jour de chance","http://www.myinstants.com/instant/qui-va-venir/","Ce mois-ci, je me fous de ta gueule intérieurement. Par contre le mois prochain...","GET PWNED SCRUB","HA ! HA ! AH ! HA ! AH ! HA ! HA !","Essaie encore !","Your bonner is gone, right ?","viktim boloss aimdeairrrrrrrrrr","Ah oui oui oui oui oui c'est non !","You said gg. But it wasn't gg. It was bg.","*insérer tweet moqueur envers mon créateur pour le rendre encore plus mal*","Au moins ça a pas duré 30 secondes ! DES BARRES MDR","T'es quand même con d'avoir fait un script python qui se fout de ta gueule tous les 28 du mois :3","Pleure ! Tu pisseras moins.","#rekt #mlg","http://www.myinstants.com/instant/motus-boule-noire/","Je sais qu'à cette heure-ci des larmes coulent sur ton sperme."] # Liste de tweets contenant 20 phrases
 	tweet = "@FriendlyPootis" + espace + listeTweets
 	api.update_status(status=tweet)
-elif day ==
+elif month == 2 and day == 14 and hour == 14:
+	img = open('/home/pi/python/applebarn_assets/doigt.jpg', 'rb')
+	tweet = "Joyeuse Saint Valentin à tous !"
+	api.update_status_with_media(status=tweet, media=img)
+elif day == 5 and hour == 12:
+	tweet = "JE RAMÈNE UN PD, JE T'ATTACHE ET IL T'ENCULE !"
+	api.update_status(status=tweet)
 else:
 	type_tweet = random.randint(1, 2) # Variable random servant à définir le type du tweet crée
